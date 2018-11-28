@@ -1,4 +1,4 @@
-Installation manual
+<h1>Installation manual</h1>
 
 1. git clone https://github.com/iberdiev/asyncloader     ## Downloading the project
 2. cd asyncloader     ## Referring needed directory
@@ -10,7 +10,7 @@ Installation manual
 8. http://127.0.0.1:8000/     ## Go to the given address from browser and enjoy
 <h4>Run with python==3.5, due to compatibility issues with celery/redis</h4>
 
-Usage manual
+<h1>Usage manual</h1>
 
 1. Click on "Download music"
 2. Put the link of the video and your email --> Save
