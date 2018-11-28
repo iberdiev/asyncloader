@@ -40,7 +40,7 @@ python3 manage.py runserver
 ```
 9. Browse http://127.0.0.1:8000/
 
-###Run with python==3.5, due to compatibility issues with celery/redis
+### Run with python==3.5, due to compatibility issues with celery/redis
 
 ## Usage manual
 
