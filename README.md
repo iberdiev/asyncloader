@@ -1,6 +1,14 @@
-<h1>Installation manual</h1>
+# Youtube Video Loader
 
-1. git clone https://github.com/iberdiev/asyncloader     ## Downloading the project
+Django Website which can be used to download audio file (mp3) of Youtube videos. 
+
+
+## Installation manual
+
+1. Downloading the project
+```
+git clone https://github.com/iberdiev/asyncloader 
+```
 2. cd asyncloader     ## Referring needed directory
 3. virtualenv --python=/usr/bin/python3.5 myvenv     ## Creating a virtual environment with python3.5
 4. . myvenv/bin/activate     ## Activating virtual environment (for OS Linux)
@@ -12,7 +20,7 @@
 10. Create a folder asyncloader/media     ## Creating a folder where will be the video and audio 
 <h4>Run with python==3.5, due to compatibility issues with celery/redis</h4>
 
-<h1>Usage manual</h1>
+## Usage manual
 
 1. Click on "Download music"
 2. Put the link of the video and your email --> Save
