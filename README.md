@@ -1,4 +1,4 @@
-# Youtube Video Loader :/play noooo:
+# Youtube Video Loader
 
 Django Website which can be used to download audio file (mp3) of Youtube videos. 
 
@@ -13,7 +13,7 @@ git clone https://github.com/iberdiev/asyncloader
 ```
 cd asyncloader
 ```
-3. Creating a virtual environment with python3.5 :/play makeitso:
+3. Creating a virtual environment with python3.5
 ```
 virtualenv --python=/usr/bin/python3.5 myvenv
 ```
@@ -21,7 +21,7 @@ virtualenv --python=/usr/bin/python3.5 myvenv
 ```
 . myvenv/bin/activate
 ```
-5. Installing all required components /play ohmy
+5. Installing all required components
 ```
 pip3 install -r requirements.txt
 ```
@@ -38,7 +38,7 @@ celery -A videoloader worker -l info
 ```
 python3 manage.py runserver
 ```
-9. Browse http://127.0.0.1:8000/ /play letitgo
+9. Browse http://127.0.0.1:8000/
 
 ### Run with python==3.5, due to compatibility issues with celery/redis
 
