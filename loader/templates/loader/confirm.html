@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> <a target="_blank" href="{{ link_list.last.link }}"> Watch the video </a> </h1>
+
+<form action='{% url 'email' %}'>{% csrf_token %}
+<input type="submit" value="Sent an email to {{ link_list.last.email }}" />
+</form>
+
+<h3>Do you want to download an mp3 file?</h3>
+
+<form action='{% url 'index' %}'>{% csrf_token %}
+<input type="submit" value="Yes" />
+</form>
+
+<form action='{% url 'index' %}'>
+<input type="submit" value="No" />
+</form>
+
+<ul>
+{% for item in link %}
+<li><a target='_blank' href="{{ item }}"> {{ item }} </a></li>
+{% endfor %}
+</ul>
+
+
+
+
+
+
+{% endblock %}
