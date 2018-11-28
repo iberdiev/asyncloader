@@ -6,7 +6,7 @@
 4. . myvenv/bin/activate     ## Activating virtual environment (for OS Linux)
 5. pip3 install -r requirements.txt     ## Installing all required components
 6. celery -A videoloader worker -l info     ## Running celery task manager
-7. ## Open a new terminal and activate the same venv (Step 4)
+7. Open a new terminal and activate the same venv (Step 4)
 8. python3 manage.py runserver     ## Run django server through manage.py
 9. http://127.0.0.1:8000/     ## Go to the given address from browser and enjoy
 10. Create a folder asyncloader/media     ## Creating a folder where will be the video and audio 
