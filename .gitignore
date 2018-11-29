@@ -4,5 +4,5 @@ loader/migrations/__pycache__
 videoloader/__pycache__/
 debug.log
 media
-myenv
+myvenv
 

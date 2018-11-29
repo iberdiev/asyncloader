@@ -4,7 +4,7 @@ from django.views.generic import TemplateView, ListView
 from .models import Link
 from django.views.generic.edit import CreateView
 # from django.core.mail import send_mail
-from .tasks import email, download_convert
+from .tasks import email
 # from celery.result import AsyncResult
 
 
@@ -27,10 +27,6 @@ class Confirm(ListView):
     model = Link
     template_name = "loader/confirm.html"
 
-# @app.task
 def email_page(request):
-    # job = email.delay()
-    # result = AsyncResult(job.id)
     email.delay()
-    download_convert.delay()
     return render(request, 'loader/email.html')
