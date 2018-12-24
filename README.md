@@ -45,6 +45,12 @@ python3 manage.py runserver
 10. Browse http://127.0.0.1:8000/
 
 ### Run with python==3.5, due to compatibility issues with celery/redis
+### add email credetials in settings.py
+```
+EMAIL_HOST = 'smtp.example.com'
+EMAIL_HOST_USER = 'email@email.example'
+EMAIL_HOST_PASSWORD = 'example123'
+```
 
 ## Usage manual
 
