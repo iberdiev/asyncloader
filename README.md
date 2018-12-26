@@ -1,12 +1,24 @@
 # Youtube Video Loader
 
-Django Website which can be used to download audio file (mp3) of Youtube videos. 
+Django Website which can be used to download audio file (mp3) of Youtube videos.
+### Add email credentials in settings.py
+```
+EMAIL_HOST = 'smtp.example.com'
+EMAIL_HOST_USER = 'email@email.example'
+EMAIL_HOST_PASSWORD = 'example123'
+``` 
 
 ##### Make sure you have:
 1. installed pip 
 2. installed git
 3. python3.5
 4. enabled remote redis connection on port 6379
+## Running via Docker container
+1. Go to root directory and run the container
+```
+docker-compose up
+```
+3. Browse http://127.0.0.1:8000/
 ## Installation manual
 
 1. Download the project
@@ -45,12 +57,6 @@ python3 manage.py runserver
 10. Browse http://127.0.0.1:8000/
 
 ### Run with python==3.5, due to compatibility issues with celery/redis
-### Add email credentials in settings.py
-```
-EMAIL_HOST = 'smtp.example.com'
-EMAIL_HOST_USER = 'email@email.example'
-EMAIL_HOST_PASSWORD = 'example123'
-```
 
 ## Usage manual
 
