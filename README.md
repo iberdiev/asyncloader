@@ -31,7 +31,7 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379' -> CELERY_RESULT_BACKEND = 'red
 ```
 ~/asyncloader$ mkdir media
 ```
-3. Browse http://127.0.0.1:8000/
+4. Browse http://127.0.0.1:8000/
 ## Installation manual
 
 1. Download the project
