@@ -18,7 +18,7 @@ EMAIL_HOST_PASSWORD = 'example123'
 ```
 docker-compose up
 ```
-3. Browse http://127.0.0.1:8000/
+2. Browse http://127.0.0.1:8000/
 ## Installation manual
 
 1. Download the project
