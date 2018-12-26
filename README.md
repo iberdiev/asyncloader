@@ -18,10 +18,18 @@ EMAIL_HOST_PASSWORD = 'example123'
 ```
 docker-compose up
 ```
+1. Go to root directory and run the container
+```
+docker-compose up
+```
 2. Edit these lines in settings.py
 ```
 CELERY_BROKER_URL = 'redis://localhost:6379' -> CELERY_BROKER_URL = 'redis://redis:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379' -> CELERY_RESULT_BACKEND = 'redis://redis:6379'
+```
+3. Create a folder media in root folder
+```
+~/asyncloader$ mkdir media
 ```
 3. Browse http://127.0.0.1:8000/
 ## Installation manual
