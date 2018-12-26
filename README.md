@@ -23,7 +23,7 @@ docker-compose up
 CELERY_BROKER_URL = 'redis://localhost:6379' -> CELERY_BROKER_URL = 'redis://redis:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379' -> CELERY_RESULT_BACKEND = 'redis://redis:6379'
 ```
-2. Browse http://127.0.0.1:8000/
+3. Browse http://127.0.0.1:8000/
 ## Installation manual
 
 1. Download the project
