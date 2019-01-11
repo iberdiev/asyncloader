@@ -10,7 +10,7 @@ services:
     depends_on:
       - redis
     volumes:
-      - .:/asyncloader
+      - ./:/asyncloader
   celery:
     build: .
     command: bash -c "apt-get update && apt-get install -y ffmpeg && celery -A videoloader worker -l info"
@@ -20,5 +20,7 @@ services:
       - redis
     environment:
       REDIS_URL: "redis://redis:6379"
+    volumes:
+      - ./:/asyncloader
 
 
